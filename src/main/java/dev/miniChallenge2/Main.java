@@ -38,6 +38,9 @@ public class Main {
 
         Supplier<String> iLoveJava = () -> "I love Java!";
         Supplier<String> iLoveJava2 = () -> {return "I Love Java!";};
+
+        System.out.println(iLoveJava.get());
+//        I love Java!
     }
 
     public static String everySecondChar(Function<String, String> function, String parameter) {
