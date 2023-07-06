@@ -1,5 +1,6 @@
 package dev.miniChallenge2;
 
+import java.util.function.Function;
 import java.util.function.UnaryOperator;
 
 public class Main {
@@ -30,5 +31,9 @@ public class Main {
 
         System.out.println(everySecondCharLambda.apply("1234567890"));
 //        24680
+    }
+
+    public static String everySecondChar(Function<String, String> function, String parameter) {
+        return function.apply(parameter);
     }
 }
