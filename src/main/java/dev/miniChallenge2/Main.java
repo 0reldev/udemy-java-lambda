@@ -31,6 +31,9 @@ public class Main {
 
         System.out.println(everySecondCharLambda.apply("1234567890"));
 //        24680
+
+        System.out.println(everySecondChar(everySecondCharLambda, "1234567890"));
+//        24680
     }
 
     public static String everySecondChar(Function<String, String> function, String parameter) {
